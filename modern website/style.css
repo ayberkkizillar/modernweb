@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-decoration: none;
+}
+.navbar {
+    background-color:rgb(255, 255, 255);
+    height: 99px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;    
+}
+.navbar-logo{
+    flex-basis: 353.78px;
+}
+.navbar-logo img {
+    margin: 35px 0px 35px 45px;
+    height: 29px;
+    width: 59px;
+    
+    
+}
+.navbar-menu {
+    display: flex;
+    justify-content:flex-start;
+   
+}
+/* .navbar-menu {
+position: absolute;
+left: 35%;
+transform: translate (-50%,-50%)
+} */
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.navbar-menu li{
+    margin: 0px 28px;
+}
+.navbar-menu a{
+    text-decoration: none;
+    color: #14203E;   
+}
+.navbar-btn {
+    margin-top:25px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.navbar-btn a{
+    text-decoration: none;
+    
+    height: 49px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-top:13px;
+}
+.navbar-btn-lgn {
+    width: 111px;
+    background-color: #F6F0E8;
+    color:black;
+    margin-right: 15px;  
+}
+.navbar-btn-strt {
+    width: 179px;
+    background-color: #14203E;
+    margin-right: 45px;
+    color:white;
+}
+.middle {
+    height: 604px;
+    background-color: #F6F0E8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.middle h1{
+    width:600px;
+    height:144px;
+    margin-top: 129px;
+    font-size: 66px;
+}
+.middle h3{
+    width:600px;
+    height:58px;
+    margin-top:30px;
+    font-size: 22px;    
+}
+.main-middle {
+    margin-top: 40px;
+}
+.main-middle a{
+    width: 192px;
+    background-color: #14203E;
+    color:white;
+    text-decoration: none;
+    display:inline-block;
+    height: 73px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-top:25px;
+}
+.section-lower{
+    height: 496px;
+    background-color:#14203E;
+}
+.bfr-aftr {
+    color:white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+    padding: 20px;
+  }
+  .bfr-aftr::after,
+  .bfr-aftr::before {
+    content: "";
+    border: 1px solid #F6F0E8;
+    flex: 1;
+  }
+  .bfr-aftr:not(:empty)::before {
+    margin-right: 0.25em;
+  }
+  .bfr-aftr:not(:empty)::after {
+    margin-left: 0.25em;
+  }
+  .article-container{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    width: 1254px;
+    height: 356px;
+    margin:auto;
+  }
+  .article {
+    width:291px;
+    height: 356px;
+  }
+  .article img {
+    width:290px;
+    height: 231px;
+  }
+  .article p{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .article h6{
+    font-size: 14px;
+  }
+.section-smnr {
+    height:270px;
+    background-color: #647589;   
+}
+.section-smnr-img{
+    opacity: 0.5;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, 25%);
+}
+.section-smnr-img:hover{
+    opacity: 0.2;
+}
+.section-smnr-a{
+    text-decoration: none;
+    color:#14203E;
+    font-size: 66px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 125%)    
+}
+.section-smnr-a:hover{
+    color:#F6F0E8;
+    font-weight:bold;
+}
+
+.section-card {
+    height: auto;
+    background-color:#647589;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto; 
+    padding:50px;   
+}
+.card-bck {
+    width: 666px;
+    height:716px;
+    background-color:#E0E9FE;
+    margin:auto;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card-bck-h {
+    margin-top: 75px;
+    margin-left:75px;    
+}
+.card-bck-h h1 {
+    font-size:44px;
+    color:#121C51;
+    font-weight:bold;
+}
+.card-bck-h h3{
+    font-size: 16px;
+    padding-top: 16px;
+    color:#121C51;
+}
+.form-group {
+    height: 105px;
+    width: 97px;
+    display: flex;    
+    justify-content: space-evenly;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+.form-group input {
+    display: none;
+}
+.mod-one input:checked + label {
+    background: red;
+    color: white;
+}
+.mod-two input:checked + label {
+    background: orange;
+    color: white;
+}
+.mod-three input:checked +label {
+    background-color: yellow;
+    color: black;
+}
+.mod-four input:checked + label {
+    background-color: greenyellow;
+    color: black;
+}
+.mod-five input:checked + label {
+    background-color: green;
+    color: white;
+}
+
+.form-group label {
+    height: 105px;
+    width: 97px;
+}
+.form-group img{
+    padding-top: 15px;
+    display:flex;
+    margin:auto;
+}
+.mood-menu{
+    margin-top:31px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 75px;
+    margin-left: 75px;    
+}
+i {
+    font-size:55px;   
+}
+.mood-menu-info{
+    display: flex;
+    flex-direction: column;
+    margin-top:40px;
+    margin-left: 75px;
+    color:#121C51;
+    font-size: 14px;
+    font-weight:bold;
+
+}
+.mood-menu-inp {
+    height: 82px;
+    width: 516px;
+    margin-top:8px;
+}
+.mood-menu-forms {
+    margin-left: 75px;
+    margin-top: 31px;    
+}
+.mood-menu-forms-scnd {
+    margin-top:16px;
+}
+.mood-menu-btn {
+    margin: 50px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.mood-btn-submit {
+    width: 115px;
+    height: 57px;
+    background-color:#121C51;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 16px;
+    padding-top: 10px;
+    color:#ffffff;
+    text-decoration: bold;
+}
+.mood-btn-cancel {
+    width: 115px;
+    height: 57px;
+    background-color:#ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.mood-menu-forms a{
+    color:rgb(199, 0, 33);
+    font-weight: bold;
+    
+}
